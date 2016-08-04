@@ -1,0 +1,25 @@
+/**********************************************
+                Nav Bar Styles
+***********************************************/
+.navbar-style-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+}
+
+.navbar-style-default .navbar-nav > li > a {
+    text-decoration: none;
+    color: #777777;
+}
+
+.navbar-style-default .navbar-brand {
+    color: #000000;
+    font-weight: 500;
+}
+
+/* Nav Bar Toggle Button */
+.navbar-style-default .navbar-toggle {
+    border: 1px solid #000000;
+}
+.navbar-style-default .navbar-toggle>.icon-bar {
+    background-color: #000000;
+}
