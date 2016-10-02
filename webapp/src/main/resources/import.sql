@@ -1,0 +1,1 @@
+insert into user(id, password, role, username) values(1, 'test', 'USER', 'medge')
