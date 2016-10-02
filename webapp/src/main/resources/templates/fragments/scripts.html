@@ -1,7 +1,29 @@
 <thymeleaf xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
            th:fragment="scripts" th:remove="tag">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="../static/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+<script type="text/javascript">
+    var modal = document.getElementById('loginModal')
+    var login = document.getElementById("header-login")
+
+    // Get the element that closes the modal
+    var close = document.getElementsByClassName("close")[0]
+
+    // When the user clicks on the button, open the modal
+    login.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on (x), close the modal
+    close.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none"
+        }
+    }
+</script>
 
 </thymeleaf>

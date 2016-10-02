@@ -1,0 +1,30 @@
+<thymeleaf xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+           th:fragment="header" th:remove="tag">
+
+    <nav>
+        <ul>
+            <li><img th:src="@{/images/logo-90x47.jpg}" width="90" height="38" /></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <ul>
+            <li><a id="header-login" href="#">Login</a></li>
+            <li><a id="header-register" href="#">Register</a></li>
+        </ul>
+    </nav>
+
+    <!-- The Modal -->
+    <div id="loginModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">x</span>
+            <p>Login</p>
+        </div>
+
+    </div>
+
+
+</thymeleaf>
